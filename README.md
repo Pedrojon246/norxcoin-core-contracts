@@ -27,3 +27,9 @@ Para total transparência, estas são as carteiras que interagem com o contrato:
 * **Taxa de Transferência:** Inicial de 1,5%, limitada a um máximo de 10% para sustentar o ecossistema.
 * **Controle de Pausa:** Capacidade de pausar transferências em caso de manutenção ou migração crítica para a rede NSC.
 * **Exclusão de Taxas:** Endereços estratégicos (como recompensas e liquidez) são isentos de taxas para otimizar a rede.
+
+## 💰 Contrato de Staking
+O ecossistema Norxcoin utiliza um sistema de Staking avançado para recompensar os detentores de longo prazo.
+- **Segurança:** Proteção contra Reentrancy e controle de acesso por cargos (ADMIN/MANAGER).
+- **Flexibilidade:** Suporte a múltiplos pools com diferentes períodos de bloqueio.
+- **Transparência:** Cálculos de APR baseados em blocos da rede.
