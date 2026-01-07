@@ -33,3 +33,9 @@ O ecossistema Norxcoin utiliza um sistema de Staking avançado para recompensar 
 - **Segurança:** Proteção contra Reentrancy e controle de acesso por cargos (ADMIN/MANAGER).
 - **Flexibilidade:** Suporte a múltiplos pools com diferentes períodos de bloqueio.
 - **Transparência:** Cálculos de APR baseados em blocos da rede.
+
+## 🔒 Vesting da Equipe
+Para garantir a sustentabilidade e o compromisso de longo prazo, os tokens da equipe estão sujeitos a um cronograma de liberação controlada (Vesting).
+- **Período Total:** 12 meses.
+- **Liberação:** 25% a cada 3 meses.
+- **Transparência:** O contrato impede a retirada antecipada, alinhando os interesses da equipe com os dos detentores do token.
