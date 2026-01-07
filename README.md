@@ -1,9 +1,9 @@
 # Norxcoin (NORX) - Core Smart Contracts
 
-Este repositório contém os contratos inteligentes oficiais do ecossistema **Norxcoin**. Nosso projeto nasceu com a missão de fornecer uma infraestrutura de pagamentos sólida para o setor imobiliário e de serviços através do **NorxPay**.
+Este repositório contém os contratos inteligentes oficiais do ecossistema **Norxcoin**. Nosso projeto nasceu com a missão de fornecer uma infraestrutura de pagamentos sólida para além da bolha cryto através do **NorxPay**.
 
 ## 🚀 Visão de Soberania (NSC)
-Atualmente operando na rede BSC, a Norxcoin está em processo de transição para sua própria rede independente, a **Norx Smart Chain (NSC)**. O objetivo é eliminar a dependência de liquidez externa e garantir taxas mínimas para nossos usuários e corretores parceiros [cite: 2026-01-02].
+Atualmente operando na rede BSC, a Norxcoin está em processo de transição para sua própria rede independente, a **Norx Smart Chain (NSC)**. O objetivo é eliminar a dependência de liquidez externa e garantir taxas mínimas para nossos usuários.
 
 ## 📊 Tokenomics & Distribuição
 O fornecimento total inicial foi de **1.500.000_000 NORX**, distribuídos da seguinte forma:
@@ -25,5 +25,5 @@ Para total transparência, estas são as carteiras que interagem com o contrato:
 
 ## ⚙️ Funcionalidades do Contrato
 * **Taxa de Transferência:** Inicial de 1,5%, limitada a um máximo de 10% para sustentar o ecossistema.
-* **Controle de Pausa:** Capacidade de pausar transferências em caso de manutenção ou migração crítica para a rede NSC [cite: 2026-01-02].
+* **Controle de Pausa:** Capacidade de pausar transferências em caso de manutenção ou migração crítica para a rede NSC.
 * **Exclusão de Taxas:** Endereços estratégicos (como recompensas e liquidez) são isentos de taxas para otimizar a rede.
