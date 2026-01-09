@@ -39,3 +39,22 @@ Para garantir a sustentabilidade e o compromisso de longo prazo, os tokens da eq
 - **Período Total:** 12 meses.
 - **Liberação:** 25% a cada 3 meses.
 - **Transparência:** O contrato impede a retirada antecipada, alinhando os interesses da equipe com os dos detentores do token.
+
+## 💎 Contrato de Pré-Venda (Presale)
+O contrato de pré-venda foi o pilar inicial para a distribuição justa do ecossistema, utilizando um modelo de Tiers para garantir que a comunidade pudesse entrar cedo no projeto.
+
+### 📈 Histórico de Valorização Real
+A Norxcoin (NORX) demonstrou um desempenho de mercado excepcional. Quem participou das fases iniciais de pré-venda hoje detém um ativo com valorização massiva.
+
+| Tier de Venda | Preço na Pré-Venda (Tokens por $10) | Preço Atual (09/01/2026) | Valorização (%) |
+| :--- | :--- | :--- | :--- |
+| **Bronze / Silver / Gold** | ~$0,00010 | **$0,0287** | **+28.600%** |
+
+---
+
+### 🛠 Detalhes Técnicos da Pré-Venda
+O contrato `NorxcoinPresale.sol` foi implementado com foco em segurança e transparência:
+* **Estrutura de Tiers:** Limitação de participantes por categoria (Bronze, Silver e Gold) para evitar a concentração de tokens (Baleias).
+* **Segurança:** Implementação de `ReentrancyGuard` e `AccessControl` para proteção contra ataques e gestão de cargos (ADMIN/MANAGER).
+* **Gestão de Tesouraria:** Transferência automática de fundos para a `treasuryWallet` e proteção contra envio acidental de BNB via `revert` no `receive()`.
+* **Finalização:** Função de encerramento que retira tokens não vendidos da circulação, protegendo o valor dos detentores atuais.
