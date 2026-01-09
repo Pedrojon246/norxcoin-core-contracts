@@ -58,3 +58,28 @@ O contrato `NorxcoinPresale.sol` foi implementado com foco em segurança e trans
 * **Segurança:** Implementação de `ReentrancyGuard` e `AccessControl` para proteção contra ataques e gestão de cargos (ADMIN/MANAGER).
 * **Gestão de Tesouraria:** Transferência automática de fundos para a `treasuryWallet` e proteção contra envio acidental de BNB via `revert` no `receive()`.
 * **Finalização:** Função de encerramento que retira tokens não vendidos da circulação, protegendo o valor dos detentores atuais.
+
+
+## 🌪 Airdrop Deflacionário (Burn-Heavy Model)
+O contrato `NorxcoinAirdropDeflacionario.sol` foi projetado para recompensar a comunidade enquanto reduz drasticamente o fornecimento total (Supply) através de um mecanismo de queima 10:1.
+
+### 📉 Mecanismo de Escassez Agressiva
+Diferente de airdrops comuns que apenas diluem o token, o modelo da Norxcoin é **extra-deflacionário**:
+* **Recompensa do Usuário:** Máximo de 140 NORX por participante.
+* **Queima Obrigatória (Burn):** Ao realizar o *claim*, o contrato executava automaticamente a queima de **10x o valor recebido**.
+* **Exemplo:** Se um usuário reivindica **140 NORX**, o contrato queima **1.400 NORX** permanentemente da circulação.
+
+> "A Norxcoin foi construída para se tornar cada vez mais rara à medida que a comunidade cresce."
+
+---
+
+### 🛠 Regras e Recompensas
+O contrato gerenciava um sistema de tarefas sociais para engajamento orgânico:
+* **Tarefas Sociais (Twitter, Telegram, Insta, YT):** 15 NORX cada.
+* **Bônus de Engajamento:** Likes e Retweets bônus.
+* **Sistema de Referência:** 55 NORX por indicação (limitado a 5 convites).
+
+### 🔒 Funções de Segurança Integradas
+* **Controle de Owner:** Apenas o administrador pode validar a conclusão das tarefas, evitando bots.
+* **Emergency Withdraw:** Proteção para recuperação de tokens em caso de necessidade de atualização.
+* **One-time Claim:** Mapeamento rigoroso (`hasClaimed`) para garantir que cada carteira participe apenas uma vez.
