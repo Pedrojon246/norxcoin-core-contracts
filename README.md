@@ -110,3 +110,32 @@ Diferente de outros tokens onde a queima é retirada do valor que o usuário com
 * **Oracle Chainlink:** Integração em tempo real com o feed de preços da Chainlink para garantir que o valor em BNB/USDT seja sempre justo e atualizado.
 * **Segurança Multi-Nível:** Proteção contra reentrância (`ReentrancyGuard`) e controle de pausa para emergências.
 * **Transparência Total:** Todas as queimas e taxas são registradas em eventos on-chain, auditáveis por qualquer pessoa via BscScan.
+
+
+---
+
+
+## 🐍 Snake Mining & Marketplace (Play-to-Earn)
+O contrato `NORXSnakeMining.sol` é o motor do nosso ecossistema de jogos, permitindo que os usuários minerem NORX através da habilidade no jogo da cobrinha, enquanto integra um Marketplace completo para itens e power-ups.
+
+### 🎮 Mecânica de Mineração (Proof-of-Play)
+A mineração não é baseada em hardware, mas em engajamento. O contrato gerencia sessões de jogo seguras (`GameSession`) para evitar fraudes:
+* **Sistema de Tiers:** Sua recompensa por "comida" coletada no jogo aumenta de acordo com o saldo de NORX na sua carteira (de *Iniciante* até *Diamante*).
+* **Multiplicadores de Raridade:** Tokens coletados no mapa possuem raridades (Comum a Lendário) com multiplicadores de até **50x**.
+* **Bônus de Combo:** Recompensas extras para jogadores habilidosos que mantêm sequências de coleta sem morrer.
+
+### 🏪 Marketplace Integrado
+O contrato funciona como uma loja descentralizada onde itens podem ser adquiridos de três formas:
+1. **NORX Minerado:** Utilizando o saldo ganho diretamente no jogo (Economia Circular).
+2. **USDT (BEP-20):** Para entrada de liquidez externa.
+3. **BNB:** Para facilidade de uso na rede BSC.
+
+### 💎 O Item Lendário: Fox-Dragon
+O marketplace inclui o item exclusivo **Fox-Dragon** (ID fixo no contrato), que representa o topo da hierarquia do ecossistema, exigindo Tier específico ou valor de mercado em BNB/USDT para ser desbloqueado.
+
+---
+
+### ⚙️ Gestão de Protocolo e Taxas
+* **Ant-Bot:** Limites diários de mineração (`dailyLimit`) baseados no Tier para proteger o suprimento do token.
+* **Tesouraria (`TREASURY`):** Todas as vendas no marketplace e taxas de saque são enviadas automaticamente para a carteira de tesouraria para sustentar o desenvolvimento do projeto.
+* **Transparência:** O contrato permite consultar em tempo real o `highScore`, total minerado e itens possuídos de qualquer jogador.
