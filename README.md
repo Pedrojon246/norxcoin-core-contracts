@@ -59,6 +59,7 @@ O contrato `NorxcoinPresale.sol` foi implementado com foco em segurança e trans
 * **Gestão de Tesouraria:** Transferência automática de fundos para a `treasuryWallet` e proteção contra envio acidental de BNB via `revert` no `receive()`.
 * **Finalização:** Função de encerramento que retira tokens não vendidos da circulação, protegendo o valor dos detentores atuais.
 
+---
 
 ## 🌪 Airdrop Deflacionário (Burn-Heavy Model)
 O contrato `NorxcoinAirdropDeflacionario.sol` foi projetado para recompensar a comunidade enquanto reduz drasticamente o fornecimento total (Supply) através de um mecanismo de queima 10:1.
