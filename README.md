@@ -85,6 +85,8 @@ O contrato gerenciava um sistema de tarefas sociais para engajamento orgânico:
 * **Emergency Withdraw:** Proteção para recuperação de tokens em caso de necessidade de atualização.
 * **One-time Claim:** Mapeamento rigoroso (`hasClaimed`) para garantir que cada carteira participe apenas uma vez.
 
+---
+
 
 ## 🛒 Sistema de Compra Direta no Site Oficial (www.norxcompany.com.br)
 O contrato `NORXCoinOTC.sol` gerencia as compras feitas diretamente pelo site oficial usando BNB ou USDT. Ele foi desenhado para ser o motor de valorização contínua do ecossistema Norxcoin.
