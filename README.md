@@ -84,3 +84,27 @@ O contrato gerenciava um sistema de tarefas sociais para engajamento orgânico:
 * **Controle de Owner:** Apenas o administrador pode validar a conclusão das tarefas, evitando bots.
 * **Emergency Withdraw:** Proteção para recuperação de tokens em caso de necessidade de atualização.
 * **One-time Claim:** Mapeamento rigoroso (`hasClaimed`) para garantir que cada carteira participe apenas uma vez.
+
+
+## 🛒 Sistema de Compra Direta no Site Oficial (www.norxcompany.com.br)
+O contrato `NORXCoinOTC.sol` gerencia as compras feitas diretamente pelo site oficial usando BNB ou USDT. Ele foi desenhado para ser o motor de valorização contínua do ecossistema Norxcoin.
+
+### ⚖️ O Diferencial: Queima Justa (Bonus Burn)
+Um dos pontos mais importantes do nosso modelo econômico é que a **Deflação não penaliza o investidor**. 
+
+Diferente de outros tokens onde a queima é retirada do valor que o usuário compra, na Norxcoin:
+* **O Usuário recebe o que pagou:** Se você compra 1.000 NORX, a queima de 10% (100 NORX) é gerada como um **custo extra do contrato**.
+* **Impacto Real:** Para cada compra, o contrato retira do próprio estoque uma quantidade adicional de tokens e os envia para a `DEAD_WALLET`, acelerando a escassez sem reduzir o saldo do comprador.
+
+**Exemplo de Transação (1.000 NORX):**
+1. **Comprador recebe:** 985 NORX (após taxa de serviço de 1.5%).
+2. **Taxa de Serviço:** 15 NORX (destinados à manutenção do ecossistema).
+3. **Queima (BURN):** **100 NORX são destruídos para sempre.**
+4. **Total saindo do estoque:** 1.100 NORX.
+
+---
+
+### 🛠 Funcionalidades de Alta Tecnologia
+* **Oracle Chainlink:** Integração em tempo real com o feed de preços da Chainlink para garantir que o valor em BNB/USDT seja sempre justo e atualizado.
+* **Segurança Multi-Nível:** Proteção contra reentrância (`ReentrancyGuard`) e controle de pausa para emergências.
+* **Transparência Total:** Todas as queimas e taxas são registradas em eventos on-chain, auditáveis por qualquer pessoa via BscScan.
